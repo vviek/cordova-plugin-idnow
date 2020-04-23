@@ -1,0 +1,19 @@
+	repositories {
+    maven {
+       url "https://raw.githubusercontent.com/idnow/de.idnow.android.sdk/master"
+    }
+}
+	android{
+			defaultConfig {
+				renderscriptTargetApi 16
+				renderscriptSupportModeEnabled true
+				vectorDrawables.useSupportLibrary = true
+				}
+			packagingOptions {
+			pickFirst 'lib/armeabi-v7a/libRSSupport.so'
+    }
+}
+
+dependencies {
+    implementation 'de.idnow.android.sdk:idnow-platform:3.17.0'
+}
