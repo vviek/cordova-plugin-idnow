@@ -55,9 +55,9 @@ return false;
     }
 
     private void startIdent(CallbackContext callbackContext, String token) {
-        //idnowSdk.startIdent(token, this);
+        idnowSdk.startIdent(token, this);
 
-        idnowSdk.startIdent("PNW-JNTUR", this);
+        //idnowSdk.startIdent("PNW-JNTUR", this);
         callbackContext.success();
     }
 
